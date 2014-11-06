@@ -9,9 +9,10 @@
  */
 angular.module('levelUpUiApp')
   .controller('LeaderBoardCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+    $scope.leaders = [
+        { hero: 'Jerrod', points: 1 },
+        { hero: 'Stephen', points: 3},
+        { hero: 'Cliff', points: 0 },
+        { hero: 'Jon', points: 100 }
     ];
   });

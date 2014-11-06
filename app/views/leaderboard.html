@@ -1,3 +1,15 @@
-<p>
-    you are in the lead!
-</p>
+<div class="header lead">Here are your leaders!</div>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Points</th>
+        <th>Hero</th>
+    </tr>
+    </thead>
+    <tr ng-repeat="leader in leaders | orderBy:'points':reverse=true">
+        <td class="points">
+            {{leader.points}}
+        </td>
+        <td class="hero"> {{leader.hero}}</td>
+    </tr>
+</table>
