@@ -3,3 +3,11 @@ dist
 .tmp
 .sass-cache
 bower_components
+
+# WebStorm
+.DS_Store
+*.iml
+*.ipr
+*.iws
+
+/.idea/*
