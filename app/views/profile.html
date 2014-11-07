@@ -1,3 +1,21 @@
 <p>
-    Tell me about yourself, please.
+    Look at all that you have done!
 </p>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Points</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tr ng-repeat="achievement in achievements | orderBy:'type'">
+    <td> {{achievement.title}}</td>
+    <td> {{achievement.points}}</td>
+    <td> {{achievement.type}}</td>
+    <td> {{achievement.description}}</td>
+  </tr>
+</table>
+

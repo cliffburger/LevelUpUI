@@ -35,6 +35,10 @@ define([
                 controller: 'achievementsController'
             })
             .when('/profile', {
+              templateUrl: 'views/profile.html',
+              controller: 'profileController'
+            })
+            .when('/profile/:heroId', {
                 templateUrl: 'views/profile.html',
                 controller: 'profileController'
             })

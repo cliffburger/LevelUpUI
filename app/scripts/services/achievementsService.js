@@ -8,14 +8,18 @@ define([], function(){
 
   function achievementsService($resource){
 
-    var AchievementsApi = $resource(createApiUrl('achievements'));
 
     function getAchievements(){
-      return AchievementsApi.query().$promise;
+      return $resource(createApiUrl('achievements')).query().$promise;
+    }
+
+    function getHeroAchievements(heroId){
+      return $resource(createApiUrl('achievements/:heroId')).get({ heroId: heroId}).$promise;
     }
 
     return {
-      getAchievements: getAchievements
+      getAchievements: getAchievements,
+      getHeroAchievements: getHeroAchievements
     };
   }
 
