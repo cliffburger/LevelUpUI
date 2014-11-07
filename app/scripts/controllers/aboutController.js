@@ -2,11 +2,7 @@ define([], function () {
     'use strict';
 
     function aboutController($scope) {
-        $scope.awesomeThings = [
-            'HTML5 Boilerplate',
-            'AngularJS',
-            'Karma'
-        ];
+        $scope.about = 'Inspirational mumbo jumbo';
     }
 
     aboutController.$inject = ['$scope'];

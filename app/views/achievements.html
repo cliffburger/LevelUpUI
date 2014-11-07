@@ -1,3 +1,15 @@
-<p>
-    Congratulations! You win!
-</p>
+<div class="header lead">Yeah, look at what you've done!</div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Points</th>
+    <th>Type</th>
+  </tr>
+  </thead>
+  <tr ng-repeat="achievement in achievements | orderBy:'type'">
+    <td> {{achievement.title}}</td>
+    <td> {{achievement.points}}</td>
+    <td> {{achievement.type}}</td>
+  </tr>
+</table>

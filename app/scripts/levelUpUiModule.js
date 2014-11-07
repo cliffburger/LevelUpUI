@@ -1,12 +1,14 @@
 'use strict';
 
 define([
-    'scripts/controllers/main.js',
-    'scripts/controllers/about.js',
-    'scripts/controllers/leaderboard',
-    'scripts/controllers/achievements',
-    'scripts/controllers/profile.js'
-], function (mainController, aboutController, leaderboardController, achievementsController, profileController) {
+    'scripts/controllers/mainController.js',
+    'scripts/controllers/aboutController.js',
+    'scripts/controllers/leaderboardController',
+    'scripts/controllers/achievementsController',
+    'scripts/controllers/profileController.js',
+    'scripts/services/leaderboardService.js',
+    'scripts/services/achievementsService.js'
+], function (mainController, aboutController, leaderboardController, achievementsController, profileController, leaderboardService, achievementsService) {
 
     var app = angular.module('levelUpUiApp', [
         'ngAnimate',
@@ -46,5 +48,7 @@ define([
     app.controller('leaderboardController', leaderboardController);
     app.controller('achievementsController', achievementsController);
     app.controller('profileController', profileController);
+    app.factory('leaderboardService', leaderboardService);
+    app.factory('achievementsService', achievementsService);
 
 });
