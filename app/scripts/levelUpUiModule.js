@@ -5,8 +5,9 @@ define([
     'scripts/controllers/about.js',
     'scripts/controllers/leaderboard',
     'scripts/controllers/achievements',
-    'scripts/controllers/profile.js'
-], function (mainController, aboutController, leaderboardController, achievementsController, profileController) {
+    'scripts/controllers/profile.js',
+    'scripts/services/leaderboardService.js'
+], function (mainController, aboutController, leaderboardController, achievementsController, profileController, leaderboardService) {
 
     var app = angular.module('levelUpUiApp', [
         'ngAnimate',
@@ -46,5 +47,6 @@ define([
     app.controller('leaderboardController', leaderboardController);
     app.controller('achievementsController', achievementsController);
     app.controller('profileController', profileController);
+    app.factory('leaderboardService', leaderboardService);
 
 });
