@@ -1,17 +1,15 @@
-'use strict';
+define([], function () {
+    'use strict';
 
-/**
- * @ngdoc function
- * @name levelUpUiApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the levelUpUiApp
- */
-angular.module('levelUpUiApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    function mainController($scope) {
+        $scope.awesomeThings = [
+            'HTML5 Boilerplate',
+            'AngularJS',
+            'Karma'
+        ];
+    }
+
+    mainController.$inject = ['$scope'];
+
+    return mainController;
+});

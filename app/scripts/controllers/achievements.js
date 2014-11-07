@@ -1,17 +1,14 @@
-'use strict';
+define([], function () {
+    'use strict';
+    function achievementsController($scope) {
+        $scope.awesomeThings = [
+            'HTML5 Boilerplate',
+            'AngularJS',
+            'Karma'
+        ];
+    }
 
-/**
- * @ngdoc function
- * @name levelUpUiApp.controller:AchievementsCtrl
- * @description
- * # AchievementsCtrl
- * Controller of the levelUpUiApp
- */
-angular.module('levelUpUiApp')
-  .controller('AchievementsCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    achievementsController.$inject = ['$scope'];
+
+    return achievementsController;
+});

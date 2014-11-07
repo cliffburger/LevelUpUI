@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
-<body ng-app="levelUpUiApp">
+<body>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -38,7 +38,8 @@
     <div ng-view=""></div>
 
     <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from your <strike>daptiv</strike> Changepoint level up hack day team.</p>
+        <p><span class="glyphicon glyphicon-heart"></span> from your <span
+                style="text-decoration: line-through">daptiv</span> Changepoint level up hack day team.</p>
     </div>
 </div>
 
@@ -61,12 +62,11 @@
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
-<script src="scripts/app.js"></script>
-<script src="scripts/controllers/main.js"></script>
-<script src="scripts/controllers/about.js"></script>
-<script src="scripts/controllers/leaderboard.js"></script>
-<script src="scripts/controllers/achievements.js"></script>
-<script src="scripts/controllers/profile.js"></script>
+<script data-main="main" src="bower_components/requirejs/require.js"></script>
 <!-- endbuild -->
+
+<!--
+Angular.bootstrap
+-->
 </body>
 </html>

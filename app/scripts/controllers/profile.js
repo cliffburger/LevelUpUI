@@ -1,17 +1,14 @@
-'use strict';
+define([], function () {
+    'use strict';
+    function profileController($scope) {
+        $scope.awesomeThings = [
+            'HTML5 Boilerplate',
+            'AngularJS',
+            'Karma'
+        ];
+    }
 
-/**
- * @ngdoc function
- * @name levelUpUiApp.controller:ProfileCtrl
- * @description
- * # AboutCtrl
- * Controller of the levelUpUiApp
- */
-angular.module('levelUpUiApp')
-  .controller('ProfileCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    profileController.$inject = ['$scope'];
+
+    return profileController;
+});
