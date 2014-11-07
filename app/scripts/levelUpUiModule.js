@@ -1,11 +1,11 @@
 'use strict';
 
 define([
-    'scripts/controllers/main.js',
-    'scripts/controllers/about.js',
-    'scripts/controllers/leaderboard',
-    'scripts/controllers/achievements',
-    'scripts/controllers/profile.js',
+    'scripts/controllers/mainController.js',
+    'scripts/controllers/aboutController.js',
+    'scripts/controllers/leaderboardController',
+    'scripts/controllers/achievementsController',
+    'scripts/controllers/profileController.js',
     'scripts/services/leaderboardService.js',
     'scripts/services/achievementsService.js'
 ], function (mainController, aboutController, leaderboardController, achievementsController, profileController, leaderboardService, achievementsService) {
