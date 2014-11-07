@@ -1,15 +1,17 @@
-<div class="header lead">Yeah, look at what you've done!</div>
+<div class="header lead">Yeah! We have {{ achievementCount }} achievements defined! </div>
 <table class="table table-striped">
   <thead>
   <tr>
     <th>Title</th>
     <th>Points</th>
     <th>Type</th>
+    <th>Description</th>
   </tr>
   </thead>
   <tr ng-repeat="achievement in achievements | orderBy:'type'">
     <td> {{achievement.title}}</td>
     <td> {{achievement.points}}</td>
     <td> {{achievement.type}}</td>
+    <td> {{achievement.description}}</td>
   </tr>
 </table>

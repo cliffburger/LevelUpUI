@@ -8,17 +8,15 @@ define([], function(){
 
   function achievementsService($resource){
 
-    var AchievementsApi =$resource(createApiUrl('achievements'));
+    var AchievementsApi = $resource(createApiUrl('achievements'));
 
     function getAchievements(){
       return AchievementsApi.query().$promise;
     }
 
-    var service= {
+    return {
       getAchievements: getAchievements
     };
-
-    return service;
   }
 
   achievementsService.$inject=['$resource'];
