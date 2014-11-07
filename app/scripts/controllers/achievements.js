@@ -1,14 +1,13 @@
 define([], function () {
     'use strict';
-    function achievementsController($scope) {
-        $scope.awesomeThings = [
-            'HTML5 Boilerplate',
-            'AngularJS',
-            'Karma'
-        ];
+    function achievementsController($scope, achievementsService) {
+      achievementsService.getAchievements()
+        .then(function(result){
+            $scope.achievements = result;
+        });
     }
 
-    achievementsController.$inject = ['$scope'];
+    achievementsController.$inject = ['$scope', 'achievementsService'];
 
     return achievementsController;
 });
