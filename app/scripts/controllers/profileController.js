@@ -6,8 +6,8 @@ define([], function () {
 
         achievementsService.getHeroAchievements($routeParams.heroId)
           .then(function (result) {
-            $scope.achievements = result;
-            $scope.achievementCount = result !== null ? result.length : 0;
+            $scope.achievements = result.achievements;
+            $scope.achievementCount = result.achievements !== null ? result.achievements.length : 0;
           });
       }
     }

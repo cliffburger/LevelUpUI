@@ -9,7 +9,10 @@ define([], function () {
                 { hero: 'Jerrod', points: 1 },
                 { hero: 'Stephen', points: 3},
                 { hero: 'Cliff', points: 0 },
-                { hero: 'Jon', points: 100 }
+                { hero: 'Jon', points: 100 },
+                { hero: 'Shayes', points: -123 },
+                { hero: 'Kepler', points: 200 },
+                { hero: 'Tenzing ', points: 200 }
             ];
         }
 
